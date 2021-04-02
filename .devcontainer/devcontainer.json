@@ -1,0 +1,18 @@
+{
+	"name": "Fix Client",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/app",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/zsh"
+	},
+	"shutdownAction": "stopCompose",
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"gruntfuggly.todo-tree",
+		"mike-co.import-sorter",
+		"editorconfig.editorconfig",
+		"eg2.vscode-npm-script"
+	],
+	"remoteUser": "node"
+}
