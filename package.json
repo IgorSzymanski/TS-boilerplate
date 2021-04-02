@@ -1,5 +1,5 @@
 {
-  "name": "fix-client",
+  "name": "boilerplate",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -8,8 +8,8 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "lint": "eslint {src,test}/**/*.ts",
-    "format": "eslint {src,test}/**/*.ts --fix",
+    "lint": "eslint {src,tests}/**/*.ts",
+    "format": "eslint {src,tests}/**/*.ts --fix",
     "start": "ts-node src/main.ts",
     "start:dev": "ts-node-dev --watch -- src/main.ts",
     "start:debug": "ts-node-dev --watch --debug src/main.ts",

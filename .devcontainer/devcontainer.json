@@ -1,5 +1,5 @@
 {
-	"name": "Fix Client",
+	"name": "TS Application",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/app",

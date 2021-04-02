@@ -35,44 +35,29 @@
     "@typescript-eslint/no-non-null-assertion": ["error"],
     "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
     "@typescript-eslint/ban-types": [
-    "error",
-    {
-      "types": {}
-    }
-  ],
+      "error",
+      {
+        "types": {}
+      }
+    ],
     "unicorn/no-array-reduce": "off",
     "unicorn/no-array-for-each": "off",
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-nested-ternary": "off",
     "unicorn/no-null": "off",
-    "unicorn/import-style": [
-      "error",
-      {
-        "styles": {
-          "util": false
-        }
-      }
-    ],
     "unicorn/consistent-function-scoping": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.spec.ts"]}],
     "import/prefer-default-export": "off",
     "import/extensions": ["error", "ignorePackages", { "ts": "never", "js": "never", "json": "always" }],
     "class-methods-use-this": "off",
     "no-param-reassign":["error", { "props": false }],
-    "no-restricted-syntax": ["error"],
-    "no-shadow": "off",
     "no-underscore-dangle":"off",
-    "consistent-return": "off",
     "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true, "allowTaggedTemplates": true }],
     "no-console": ["error"],
     "default-case": "off"
   },
-  "ignorePatterns": [
-    "**/libs/**"
-  ],
     "overrides": [
     {
-      "files": [ "src/fixparser/**/*.ts" ],
+      "files": [ "**/*.test.ts", "**/*.spec.ts", "**/*.test.js", "**/*.spec.js" ],
       "rules": {
         "no-restricted-syntax": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
@@ -80,9 +65,7 @@
         "import/first": "off",
         "unicorn/no-useless-undefined": "off",
         "unicorn/consistent-function-scoping": "off",
-        "unicorn/filename-case": "off",
-        "@typescript-eslint/no-explicit-any": "off",
-        "no-console": "off"
+        "unicorn/filename-case": "off"
       }
     }
   ],
@@ -90,7 +73,7 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".ts", ".json"],
-        "paths": ["./src", "./test"]
+        "paths": ["./src", "./tests"]
       }
     }
   }
