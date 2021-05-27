@@ -2,7 +2,7 @@
 	"name": "TS boilerpate",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "nodejs",
-	"workspaceFolder": "/workspaces/app",
+	"workspaceFolder": "/workspaces/TS-boilerplate",
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/zsh"
 	},
